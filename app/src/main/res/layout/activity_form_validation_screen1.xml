@@ -1,0 +1,154 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".FormValidationScreen1">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:text="Form Validation"
+        android:textSize="30sp"
+        android:textStyle="bold"
+        android:gravity="center"
+        android:textColor="@color/black"
+        android:background="@drawable/backgroundcolor"
+        ></TextView>
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@drawable/backgrnd">
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:layout_margin="30dp"
+    android:background="@drawable/outerline">
+
+
+    <TextView
+        android:layout_width="120dp"
+        android:layout_height="wrap_content"
+        android:text="Login"
+        android:textColor="@color/black"
+        android:textStyle="bold"
+        android:textSize="30sp"
+        android:layout_gravity="center"
+        android:paddingLeft="20dp"
+        android:background="@color/teal_200"
+        android:layout_marginTop="30dp"/>
+    <!--textfields-->
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/outlinedTextField"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Full Name"
+        app:startIconDrawable="@drawable/ic_baseline_person_outline_24"
+        android:layout_marginTop="40dp"
+        android:layout_marginLeft="42dp"
+        android:layout_marginRight="42dp"
+        android:textColorHint="@color/black"
+        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox">
+
+      <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+          android:id="@+id/edt_fullname"
+            android:textColor="@color/black"
+          android:textStyle="bold"
+          android:inputType="textPersonName"
+            />
+
+    </com.google.android.material.textfield.TextInputLayout>
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/outlinedTextField1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="E-mail"
+        app:startIconDrawable="@drawable/ic_baseline_email_24"
+        android:layout_marginTop="20dp"
+        android:layout_marginLeft="42dp"
+        android:layout_marginRight="42dp"
+        android:textColorHint="@color/black"
+        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox">
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/edt_mail"
+            android:inputType="textEmailAddress"
+            android:textStyle="bold"
+            />
+
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/outlinedTextField2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Phone Number"
+        app:startIconDrawable="@drawable/ic_baseline_phone_iphone_24"
+        android:layout_marginTop="20dp"
+        android:textColorHint="@color/black"
+        android:layout_marginLeft="42dp"
+        android:layout_marginRight="42dp"
+        app:counterMaxLength="10"
+        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox">
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/edt_phone"
+            android:textColor="@color/black"
+            android:textStyle="bold"
+            android:inputType="phone"
+            android:maxLength="10"
+            />
+
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/outlinedTextField3"
+        android:hint="Password"
+        app:startIconDrawable="@drawable/ic_baseline_key_24"
+        android:layout_marginTop="20dp"
+        android:layout_marginLeft="42dp"
+        android:layout_marginRight="42dp"
+        android:textColorHint="@color/black"
+        app:endIconDrawable="@drawable/ic_baseline_remove_red_eye_24"
+        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox">
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/edt_pw"
+            android:textStyle="bold"
+            android:inputType="textPassword"
+            />
+
+    </com.google.android.material.textfield.TextInputLayout>
+
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/btnid"
+        android:layout_margin="42dp"
+        android:text="Display"
+        android:textSize="25sp"
+        app:cornerRadius="30dp" />
+
+
+</LinearLayout>
+        </FrameLayout>
+    </LinearLayout>
+
+</ScrollView>

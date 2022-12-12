@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@drawable/backgroundcolor"
+    android:weightSum="2"
+    tools:context=".MainActivity">
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+ android:layout_weight="1"
+ android:weightSum="2">
+ <TextView
+     android:layout_width="match_parent"
+     android:layout_height="80dp"
+  android:text="Fill Form"
+  android:textStyle="bold"
+  android:textSize="40sp"
+     android:layout_marginTop="20dp"
+  android:textColor="@color/black"
+  android:gravity="center"
+     android:background="#3F51B5"/>
+ <EditText
+     android:id="@+id/name_edttxt"
+     android:layout_width="match_parent"
+     android:layout_height="wrap_content"
+     android:hint="Enter your Name"
+     android:layout_marginTop="50dp"
+     android:textStyle="bold|normal"
+     android:textColor="@color/black"
+     android:textSize="25sp"
+     android:layout_marginLeft="32dp"
+     android:layout_marginRight="32dp"/>
+ <EditText
+    android:id="@+id/desg_edttxt"
+     android:layout_width="match_parent"
+     android:layout_height="wrap_content"
+     android:hint="Enter your Designation"
+     android:layout_marginTop="25sp"
+     android:textStyle="bold|normal"
+     android:textColor="@color/black"
+     android:textSize="25sp"
+     android:layout_marginLeft="32dp"
+     android:layout_marginRight="32dp"/>
+ <EditText
+     android:id="@+id/mail_edttxt"
+     android:layout_width="match_parent"
+     android:layout_height="wrap_content"
+     android:hint="Enter your E-mail"
+     android:textStyle="bold|normal"
+     android:layout_marginTop="20dp"
+     android:textColor="@color/black"
+     android:textSize="25sp"
+     android:layout_marginLeft="32dp"
+     android:layout_marginRight="32dp"/>
+ <EditText
+     android:id="@+id/phone_edttxt"
+     android:layout_width="match_parent"
+     android:layout_height="wrap_content"
+     android:hint="Enter your Mobile number"
+     android:textStyle="bold|normal"
+     android:layout_marginTop="20dp"
+     android:textColor="@color/black"
+     android:textSize="25sp"
+     android:layout_marginRight="32dp"
+     android:layout_marginLeft="32dp"/>
+
+ <Button
+     android:id="@+id/buttonid"
+     android:layout_width="match_parent"
+     android:layout_height="wrap_content"
+     android:layout_gravity="center"
+     android:layout_marginTop="30dp"
+     android:gravity="center"
+     android:text="Show"
+     android:textSize="25sp"
+     app:cornerRadius="30dp"
+     android:layout_marginLeft="32dp"
+     android:layout_marginRight="32dp"/>
+</LinearLayout>
+
+</LinearLayout>
+
+
